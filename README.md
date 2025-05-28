@@ -11,8 +11,8 @@ The platform integrates data from Supabase, processes it through a custom data p
 
 1. **Ingest and Preprocess Stock Price and Company Metadata**
    - **Source**: Data is pulled from Supabase, where two tables are hosted:
-     - `stock_market_data` (daily OHLCV prices for assets)
-     - `company_info` (company metadata like sector and market cap)
+     - `stock_market_data` Fields: Date, Open, High, Low, Close, Adj Close, Volume, Name, Company Name
+     - `company_info` Fields: Symbol, Company Name, Industry, Market Cap
    - **Goals**:
      - Securely load data using a Supabase connection
      - Merge datasets on ticker symbol (Name = Symbols)
